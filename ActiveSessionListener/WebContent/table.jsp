@@ -28,7 +28,7 @@ th, td {
 Active Sessions:<%= (Integer)ctx.getAttribute("numberOfActiveSessions") %><br>
 Inactive Sessions:<%=(String) ctx.getAttribute("InActiveSessions") %><br>
 
- <% HashMap<String, SampleClass> FinalMap =(HashMap<String,SampleClass>)request.getAttribute("FinalMap"); %>
+ <% HashMap<String, SampleClass> FinalMap =(HashMap<String,SampleClass>)session.getAttribute("FinalMap"); %>
  <table style="width:100%">
  <tr>
  <th>UserName</th>
